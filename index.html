@@ -144,6 +144,189 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-1-Python字典" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/24/1-Python字典/">1-Python字典</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/24/1-Python字典/" class="archive-article-date">
+  	<time datetime="2018-08-24T07:07:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1-Python-字典</p>
+<p>字典类似于json。用{ }及键值对组成。和列表相比：速度快但是内存占用大</p>
+<p>{‘key’,’value’}</p>
+<p>新建一个大人物的基本信息。</p>
+<p>##1、新建空字典</p>
+<p>greatWoman_0 = {}</p>
+<p>##2、添加键值对</p>
+<p>greatWoman_0[‘name’] = ‘quxiaodan’</p>
+<p>greatWoman_0[‘birthday’] = ‘1991-08-11’</p>
+<p>greatWoman_0[‘名族’] = ‘汉’</p>
+<p>greatWoman_0[‘学校’] = ‘安徽建筑大学’</p>
+<p>greatWoman_0[‘技能树_1’] = ‘JavaScript’</p>
+<p>greatWoman_0[‘技能树_2’] = ‘HTML’</p>
+<p>greatWoman_0[‘技能树_3’] = ‘Python’</p>
+<p>##3、修改键值对</p>
+<p>greatWoman_0[‘学校’] = ‘杭州电子科技大学’</p>
+<p>greatWoman_0[‘技能树_2’] = ‘HTML+CSS’</p>
+<p>##4、删除键值对</p>
+<p>del greatWoman_0[‘技能树_1’]</p>
+<p>##5、访问字典的值</p>
+<p>greatWoman_0[‘name’]</p>
+<p>##6、遍历字典</p>
+<p>###（1）遍历全部的键-值对</p>
+<p>两个变量key、value可以为任意变量,方法items()获取字典键值对列表。遍历结果与键值对的顺序无关，不可预测的。字典遍历不关注键值对的存储顺序，只关心键值的对应关系</p>
+<p>for key, value in greatWoman_0.items():</p>
+<p>print(‘\nKey:’ + key)</p>
+<p>print(‘\nValue:’ + value)</p>
+<blockquote>
+<p>转义字符</p>
+</blockquote>
+<p>\n：换行符</p>
+<p>###（2）遍历所有的键</p>
+<p>遍历所有键使用方法keys()</p>
+<p>for key in greatWoman_0.keys():</p>
+<p>  print(‘\nKey：’ + key )</p>
+<p>###（3）按顺序遍历所有的键</p>
+<p>items()、keys()遍历结果都是无序的，需要用sorted()升序排列</p>
+<p>for key in sorted(greatWoman_0.keys()):</p>
+<pre><code>print(&apos;Key&apos; + key)
+</code></pre><blockquote>
+<p>问题：</p>
+</blockquote>
+<p>1、凡是报错信息中出现的错误包含“ASCII”，就是汉字编码的问题。由于本人用的sublime Text编辑器，遇到很烦的中文字符问题。UnicodeEncodeError: ‘ascii’ codec can’t encode characters in position 49-50: ordinal not in range(128)</p>
+<p>搜索很多方法，感觉都不好使.后来终于找到方法，详见《SublimeText+python3的环境配置.md》</p>
+<p>2、数字、字母、中文符合排序</p>
+<p>数字&gt;字母&gt;中文</p>
+<p>数字：按照首位大小</p>
+<p>字母z–&gt;a</p>
+<p>中文无序哇</p>
+<p>###(4)遍历所有的值</p>
+<p>for value in greatWoman_0.values():</p>
+<pre><code>print(&apos;Name：&apos; + value)
+</code></pre><blockquote>
+<p>值一定是字符串</p>
+</blockquote>
+<p>另，用方法set()可以对值去重。</p>
+<p>##7、嵌套</p>
+<p>嵌套是指：字典放在列表中，或者列表存储在字典的值里。</p>
+<p>###(1)#字典dict里面存储列表list</p>
+<p>favorite_languages = {</p>
+<pre><code>&apos;qxd&apos;:[&apos;Python&apos;, &apos;JS&apos;, &apos;HTML&apos;],
+
+&apos;mawei&apos;:[&apos;C&apos;],
+
+&apos;fangteng&apos;:[&apos;Python&apos;, &apos;Selenium&apos;]
+</code></pre><p>}</p>
+<p>for name, languages in favorite_languages.items():</p>
+<pre><code>if len(languages) == 1:
+
+  print(&quot;\n&quot; + name.title() + &quot;`s favorite language is:&quot;)  
+
+else:
+
+    print(&quot;\n&quot; + name.title() + &quot;`s favorite language are:&quot;)  
+
+for language in languages:
+
+    print(&quot;\t&quot; + str(language))
+</code></pre><p>###(2)字典里面存储字典</p>
+<p>users = {</p>
+<pre><code>&apos;qxd&apos;:{
+
+&apos;first&apos;:&apos;qu&apos;,
+
+&apos;last&apos;: &apos;xiaodan&apos;,
+
+&apos;location&apos;:&apos;hangzhou&apos;
+
+},
+
+&apos;mw&apos;:{
+
+&apos;first&apos;:&apos;ma&apos;,
+
+&apos;last&apos;: &apos;wei&apos;,
+
+&apos;location&apos;:&apos;hefei&apos;
+
+}
+</code></pre><p>}</p>
+<p>for user_name, user_info in users.items():</p>
+<pre><code>print(&quot;\n&quot; + &quot;UserName:&quot; + user_name.title() + &quot;\n\tFullname:&quot; + user_info[&apos;first&apos;] + &quot; &quot; +  user_info[&apos;last&apos;] + &quot;\n\tLocation:&quot; + user_info[&apos;location&apos;].title())
+</code></pre><p>或者</p>
+<pre><code>fullname = user_info[&apos;first&apos;] + &quot; &quot; + user_info[&apos;last&apos;]
+
+print(&quot;\nUserName:&quot; + user_name.title())
+
+print(&quot;\tFullname:&quot; + fullname)
+
+print(&quot;\tLocation:&quot; + user_info[&apos;location&apos;])
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 字典</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/24/1-Python字典/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -306,6 +489,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">python 字典</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

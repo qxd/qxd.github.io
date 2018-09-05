@@ -146,235 +146,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-3-函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Python循环和输入" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/3-函数/">3-函数</a>
+      <a class="article-title" href="/2018/09/05/Python循环和输入/">2-input&amp;循环while</a>
     </h1>
   
 
         
-        <a href="/2018/09/05/3-函数/" class="archive-article-date">
-  	<time datetime="2018-09-05T07:22:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/3-函数/">查看全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/test/">3-函数</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/05/test/" class="archive-article-date">
-  	<time datetime="2018-09-05T07:22:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/test/">查看全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-1-简单控制器-simple-controller" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/1-简单控制器-simple-controller/">1-简单控制器-simple controller</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/05/1-简单控制器-simple-controller/" class="archive-article-date">
-  	<time datetime="2018-09-05T07:14:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1、简单控制器-simple-controller"><a href="#1、简单控制器-simple-controller" class="headerlink" title="1、简单控制器  simple controller"></a>1、简单控制器  simple controller</h3><p>只用来给请求划分区块，没有什么实质的作用</p>
-<h3 id="2、一次性逻辑控制器-once-only-controller"><a href="#2、一次性逻辑控制器-once-only-controller" class="headerlink" title="2、一次性逻辑控制器  once only controller"></a>2、一次性逻辑控制器  once only controller</h3><p>每运行一次，控制器里面请求值运行一次，不论线程组设置的循环次数，适用于登录接口</p>
-<h3 id="3、循环控制器-loop-controller"><a href="#3、循环控制器-loop-controller" class="headerlink" title="3、循环控制器  loop controller"></a>3、循环控制器  loop controller</h3><p>总的循环次数是：线程组设置的循环次数✖️循环控制器loop count</p>
-<h3 id="4、交替控制器-interleave-controller"><a href="#4、交替控制器-interleave-controller" class="headerlink" title="4、交替控制器  interleave controller"></a>4、交替控制器  interleave controller</h3><p>每次执行随机一个请求，比如设置循环10次，随机控制器下有两个请求，会交替执行，共10次，各5次</p>
-<h3 id="5、随机控制器-random-controller"><a href="#5、随机控制器-random-controller" class="headerlink" title="5、随机控制器  random controller"></a>5、随机控制器  random controller</h3><p>很像交替控制器，值不是均分执行次数的。每次执行随机一个请求，比如设置循环10次，随机控制器下有两个请求，会随机执行其中一个，共10次，每个请求执行次数随机</p>
-<h3 id="6、随机顺序控制器-random-order-controller"><a href="#6、随机顺序控制器-random-order-controller" class="headerlink" title="6、随机顺序控制器  random order controller"></a>6、随机顺序控制器  random order controller</h3><p>每次执行随机一个请求，比如设置循环10次，随机控制器下有两个请求，会随机执行其中一个，共20次，每个请求执行10次数随机。</p>
-<h3 id="7、运行时长控制器-runtime-controller"><a href="#7、运行时长控制器-runtime-controller" class="headerlink" title="7、运行时长控制器 runtime controller"></a>7、运行时长控制器 runtime controller</h3><p>给你固定的时间执行，能跑几次跑几次，到了时间就结束</p>
-<h3 id="8、如果控制器-if-controller"><a href="#8、如果控制器-if-controller" class="headerlink" title="8、如果控制器 if controller"></a>8、如果控制器 if controller</h3><p>符合条件后，才执行其下的请求。比如登录成功后，才能执行另外的请求。表达式’${token}’ != ‘’  ${count}&gt;100</p>
-<h3 id="9、while-controller"><a href="#9、while-controller" class="headerlink" title="9、while controller"></a>9、while controller</h3><p>LAST — 当循环中和采样失败时推出循环</p>
-<p>Blank — 当循环中和采样失败时推出循环，如果循环前最近的采样失败了，不进入循环</p>
-<p>Otherwise — 当条件等同于于字符串false，退出循环</p>
-<h3 id="10、switch-controller"><a href="#10、switch-controller" class="headerlink" title="10、switch controller"></a>10、switch controller</h3><p>指定执行哪一个请求，标号由上到下从0开始编号。比如switch value为1，则执行由上到下第二个请求。如果switch value可设置的为请求的名称，如果未填写任何会执行第一个请求。</p>
-<h3 id="11、ForEach控制器"><a href="#11、ForEach控制器" class="headerlink" title="11、ForEach控制器"></a>11、ForEach控制器</h3><p>添加用户自动以变量，参数名称是前缀部分相同，且是以顺序的标号区分的。比如user_1、user_2、user_3、user_4。foreach中设置输入参数前缀为user，输出变量可以不设置，也可以是给下个接口使用的变量，起始索引、终止索引可指定</p>
-<h3 id="12、模块控制器-module-controller"><a href="#12、模块控制器-module-controller" class="headerlink" title="12、模块控制器 module controller"></a>12、模块控制器 module controller</h3><p>指定执行哪一个模块的请求，点击选择</p>
-<h3 id="13、include-controller-包含控制器"><a href="#13、include-controller-包含控制器" class="headerlink" title="13、include controller 包含控制器"></a>13、include controller 包含控制器</h3><p>执行外部的jmx文件，包含测试的测试计划中不能有线程组，仅仅只能有simple controller，然后其下可以添加任何采样器，控制器。</p>
-<p>遇到的问题：</p>
-<p>引入外部jmx时提示</p>
-<p>2018-07-16 15:57:29,650 INFO o.a.j.c.IncludeController: loadIncludedElements – try to load included module: /Users/quxiaodan/Documents/jemeter-code/include-controller.jmx</p>
-<p>2018-07-16 15:57:29,651 INFO o.a.j.s.SaveService: Loading file: /Users/quxiaodan/Documents/jemeter-code/include-controller.jmx</p>
-<h3 id="14、录制控制器"><a href="#14、录制控制器" class="headerlink" title="14、录制控制器"></a>14、录制控制器</h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jmeter 控制器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/1-简单控制器-simple-controller/">查看全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2-input-循环while" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/2-input-循环while/">2-input&amp;循环while</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/05/2-input-循环while/" class="archive-article-date">
+        <a href="/2018/09/05/Python循环和输入/" class="archive-article-date">
   	<time datetime="2018-09-05T07:13:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
 </a>
         
@@ -414,7 +198,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/2-input-循环while/">查看全文 >></a>
+          <a class="article-more-a" href="/2018/09/05/Python循环和输入/">查看全文 >></a>
         </p>
       
 
@@ -444,19 +228,19 @@
 
 
   
-    <article id="post-1-Python字典" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Python字典" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/1-Python字典/">1-Python字典</a>
+      <a class="article-title" href="/2018/08/24/Python字典/">1-Python字典</a>
     </h1>
   
 
         
-        <a href="/2018/08/24/1-Python字典/" class="archive-article-date">
+        <a href="/2018/08/24/Python字典/" class="archive-article-date">
   	<time datetime="2018-08-24T07:07:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-24</time>
 </a>
         
@@ -583,7 +367,7 @@ print(&quot;\tLocation:&quot; + user_info[&apos;location&apos;])
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/24/1-Python字典/">查看全文 >></a>
+          <a class="article-more-a" href="/2018/08/24/Python字典/">查看全文 >></a>
         </p>
       
 
@@ -703,10 +487,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">python 字典</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">jmeter 控制器</a>
               </li>
             
             <div class="clearfix"></div>

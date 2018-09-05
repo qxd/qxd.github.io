@@ -153,7 +153,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/Python循环和输入/">2-input&amp;循环while</a>
+      <a class="article-title" href="/2018/09/05/Python循环和输入/">循环and输入</a>
     </h1>
   
 
@@ -166,185 +166,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#2-Python-input&amp;循环while</p>
-<p>##（1）input / raw_input—键入</p>
+        <p>#2-input&amp;循环while</p>
+<p>####（1）input / raw_input—键入</p>
 <p>SublimeText不能运行输入操作，且Python2中输入为方法raw_input()，Python3中修改为input()。</p>
 <p>输入的值为字符串，需要用int()获取输入int数值</p>
 <blockquote>
-<p>age = raw_input(“How old are you? “)</p>
+<p>age = raw_input(“How old are you? “)<br>if int(age) &gt;= 24:<br> print(“Oh,no,you are not young now! you are forbiden to play it .”)<br>else:<br>    print(“qxd’s age is “ + age + “,and you can do it”)</p>
 </blockquote>
-<p>if int(age) &gt;= 24:</p>
-<pre><code>print(&quot;Oh,no,you are not young now! you are forbiden to play it .&quot;)
-</code></pre><p>else:</p>
-<pre><code>print(&quot;qxd&apos;s age is &quot; + age + &quot;,and you can do it&quot;)
-</code></pre><p>##（2）求模运算%—两数相除，取余数</p>
+<p>####（2）求模运算%—两数相除，取余数</p>
 <blockquote>
-<p>‘’’奇数偶数判定’’’</p>
+<p>‘’’奇数偶数判定’’<br>number = input(“Enter a number and I will tell you if it is even or odd:”)<br>if int(number) % 2 == 0:<br>    print(“The number “ + number +” is a even.”)<br>else:<br>    print(“The number” + number + “ is a odd.”)</p>
 </blockquote>
-<p>number = input(“Enter a number and I will tell you if it is even or odd:”)</p>
-<p>if int(number) % 2 == 0:</p>
-<pre><code>print(&quot;The number &quot; + number +&quot; is a even.&quot;)
-</code></pre><p>else:</p>
-<pre><code>print(&quot;The number&quot; + number + &quot; is a odd.&quot;)
-</code></pre>
-      
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/Python循环和输入/">查看全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python字典" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/24/Python字典/">1-Python字典</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/24/Python字典/" class="archive-article-date">
-  	<time datetime="2018-08-24T07:07:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-Python-字典"><a href="#1-Python-字典" class="headerlink" title="1-Python-字典"></a>1-Python-字典</h1><p>字典类似于json。用{ }及键值对组成。和列表相比：速度快但是内存占用大</p>
-<p>{‘key’,’value’}</p>
-<p>新建一个大人物的基本信息。</p>
-<h2 id="1、新建空字典"><a href="#1、新建空字典" class="headerlink" title="1、新建空字典"></a>1、新建空字典</h2><p>greatWoman_0 = {}</p>
-<h2 id="2、添加键值对"><a href="#2、添加键值对" class="headerlink" title="2、添加键值对"></a>2、添加键值对</h2><p>greatWoman_0[‘name’] = ‘quxiaodan’</p>
-<p>greatWoman_0[‘birthday’] = ‘1991-08-11’</p>
-<p>greatWoman_0[‘名族’] = ‘汉’</p>
-<p>greatWoman_0[‘学校’] = ‘安徽建筑大学’</p>
-<p>greatWoman_0[‘技能树_1’] = ‘JavaScript’</p>
-<p>greatWoman_0[‘技能树_2’] = ‘HTML’</p>
-<p>greatWoman_0[‘技能树_3’] = ‘Python’</p>
-<h2 id="3、修改键值对"><a href="#3、修改键值对" class="headerlink" title="3、修改键值对"></a>3、修改键值对</h2><p>greatWoman_0[‘学校’] = ‘杭州电子科技大学’</p>
-<p>greatWoman_0[‘技能树_2’] = ‘HTML+CSS’</p>
-<h2 id="4、删除键值对"><a href="#4、删除键值对" class="headerlink" title="4、删除键值对"></a>4、删除键值对</h2><p>del greatWoman_0[‘技能树_1’]</p>
-<h2 id="5、访问字典的值"><a href="#5、访问字典的值" class="headerlink" title="5、访问字典的值"></a>5、访问字典的值</h2><p>greatWoman_0[‘name’]</p>
-<h2 id="6、遍历字典"><a href="#6、遍历字典" class="headerlink" title="6、遍历字典"></a>6、遍历字典</h2><h3 id="（1）遍历全部的键-值对"><a href="#（1）遍历全部的键-值对" class="headerlink" title="（1）遍历全部的键-值对"></a>（1）遍历全部的键-值对</h3><p>两个变量key、value可以为任意变量,方法items()获取字典键值对列表。遍历结果与键值对的顺序无关，不可预测的。字典遍历不关注键值对的存储顺序，只关心键值的对应关系</p>
-<p>for key, value in greatWoman_0.items():</p>
-<p>print(‘\nKey:’ + key)</p>
-<p>print(‘\nValue:’ + value)</p>
-<blockquote>
-<p>转义字符</p>
-</blockquote>
-<p>\n：换行符</p>
-<h3 id="（2）遍历所有的键"><a href="#（2）遍历所有的键" class="headerlink" title="（2）遍历所有的键"></a>（2）遍历所有的键</h3><p>遍历所有键使用方法keys()</p>
-<p>for key in greatWoman_0.keys():</p>
-<p>  print(‘\nKey：’ + key )</p>
-<p>###（3）按顺序遍历所有的键</p>
-<p>items()、keys()遍历结果都是无序的，需要用sorted()升序排列</p>
-<p>for key in sorted(greatWoman_0.keys()):</p>
-<pre><code>print(&apos;Key&apos; + key)
-</code></pre><blockquote>
-<p>问题：<br>1、凡是报错信息中出现的错误包含“ASCII”，就是汉字编码的问题。由于本人用的sublime Text编辑器，遇到很烦的中文字符问题。UnicodeEncodeError: ‘ascii’ codec can’t encode characters in position 49-50: ordinal not in range(128)</p>
-</blockquote>
-<p>搜索很多方法，感觉都不好使.后来终于找到方法，详见《SublimeText+python3的环境配置.md》</p>
-<p>2、数字、字母、中文符合排序</p>
-<p>数字&gt;字母&gt;中文</p>
-<p>数字：按照首位大小</p>
-<p>字母z–&gt;a</p>
-<p>中文无序哇</p>
-<h3 id="4-遍历所有的值"><a href="#4-遍历所有的值" class="headerlink" title="(4)遍历所有的值"></a>(4)遍历所有的值</h3><p>for value in greatWoman_0.values():</p>
-<pre><code>print(&apos;Name：&apos; + value)
-</code></pre><blockquote>
-<p>值一定是字符串</p>
-</blockquote>
-<p>另，用方法set()可以对值去重。</p>
-<h2 id="7、嵌套"><a href="#7、嵌套" class="headerlink" title="7、嵌套"></a>7、嵌套</h2><p>嵌套是指：字典放在列表中，或者列表存储在字典的值里。</p>
-<h3 id="1-字典dict里面存储列表list"><a href="#1-字典dict里面存储列表list" class="headerlink" title="(1)#字典dict里面存储列表list"></a>(1)#字典dict里面存储列表list</h3><p>favorite_languages = {</p>
-<pre><code>&apos;qxd&apos;:[&apos;Python&apos;, &apos;JS&apos;, &apos;HTML&apos;],
-
-&apos;mawei&apos;:[&apos;C&apos;],
-
-&apos;fangteng&apos;:[&apos;Python&apos;, &apos;Selenium&apos;]
-</code></pre><p>}</p>
-<p>for name, languages in favorite_languages.items():</p>
-<pre><code>if len(languages) == 1:
-
-  print(&quot;\n&quot; + name.title() + &quot;`s favorite language is:&quot;)  
-
-else:
-
-    print(&quot;\n&quot; + name.title() + &quot;`s favorite language are:&quot;)  
-
-for language in languages:
-
-    print(&quot;\t&quot; + str(language))
-</code></pre><h3 id="2-字典里面存储字典"><a href="#2-字典里面存储字典" class="headerlink" title="(2)字典里面存储字典"></a>(2)字典里面存储字典</h3><p>users = {</p>
-<pre><code>&apos;qxd&apos;:{
-
-&apos;first&apos;:&apos;qu&apos;,
-
-&apos;last&apos;: &apos;xiaodan&apos;,
-
-&apos;location&apos;:&apos;hangzhou&apos;
-
-},
-
-&apos;mw&apos;:{
-
-&apos;first&apos;:&apos;ma&apos;,
-
-&apos;last&apos;: &apos;wei&apos;,
-
-&apos;location&apos;:&apos;hefei&apos;
-
-}
-</code></pre><p>}</p>
-<p>for user_name, user_info in users.items():</p>
-<pre><code>print(&quot;\n&quot; + &quot;UserName:&quot; + user_name.title() + &quot;\n\tFullname:&quot; + user_info[&apos;first&apos;] + &quot; &quot; +  user_info[&apos;last&apos;] + &quot;\n\tLocation:&quot; + user_info[&apos;location&apos;].title())
-</code></pre><p>或者</p>
-<pre><code>fullname = user_info[&apos;first&apos;] + &quot; &quot; + user_info[&apos;last&apos;]
-
-print(&quot;\nUserName:&quot; + user_name.title())
-
-print(&quot;\tFullname:&quot; + fullname)
-
-print(&quot;\tLocation:&quot; + user_info[&apos;location&apos;])
-</code></pre>
       
 
       
@@ -357,7 +190,7 @@ print(&quot;\tLocation:&quot; + user_info[&apos;location&apos;])
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 字典</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">python while</a>
         		</li>
       		
 		</ul>
@@ -367,7 +200,7 @@ print(&quot;\tLocation:&quot; + user_info[&apos;location&apos;])
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/24/Python字典/">查看全文 >></a>
+          <a class="article-more-a" href="/2018/09/05/Python循环和输入/">查看全文 >></a>
         </p>
       
 
@@ -486,7 +319,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">python 字典</a>
+                <a href="javascript:void(0)" class="js-tag color3">python while</a>
               </li>
             
             <div class="clearfix"></div>
